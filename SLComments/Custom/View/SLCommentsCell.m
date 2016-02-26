@@ -199,9 +199,10 @@
             UIImage *imgTmp = [UIImage imageNamed:model.imageArr[0]];
             img_W = 120;
             img_H = 120.0 * imgTmp.size.height/imgTmp.size.width;
+            colu = 1;
         }
-        
         numOfLine = 1;
+        colu = (int)model.imageArr.count;
     }else if ((model.imageArr.count >3) && (model.imageArr.count <= 6)){
         if (model.imageArr.count == 4) {
             colu = 2;
@@ -217,7 +218,6 @@
     
     for (int i = 0; i < numOfLine; i++) {
         for (int j = 0; j < colu; j++) {
-
             UIImageView *imageView = (UIImageView *)[[self.imgContentView subviews] objectAtIndex:i * colu + j];
             imageView.frame = CGRectMake(j * (img_W + 3), i * (img_H + 3), img_W, img_H);
         }
