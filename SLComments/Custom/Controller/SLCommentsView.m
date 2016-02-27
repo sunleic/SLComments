@@ -9,6 +9,7 @@
 #import "SLCommentsView.h"
 #import "CommonHeader.h"
 #import "SLCommentsCell.h"
+#import "AlbumViewController.h"
 
 @implementation SLCommentsView{
 
@@ -46,10 +47,10 @@
 }
 
 -(UIView *)createHeaderView{
-    //背景图高
-    CGFloat headerView_H = 300;
+    //tableHeader高
+    CGFloat headerView_H = 300 - 50;
     //背景图的高度
-    CGFloat headerBG_H = 270;
+    CGFloat headerBG_H = 270 - 50;
     //头像宽高
     CGFloat headerBtn_W = 70;
     CGFloat headerBtn_H = 70;
@@ -66,7 +67,7 @@
     UIButton *headerBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     headerBtn.frame = CGRectMake(SCREEN_W - headerBtn_W - 10, headerView_H - headerBtn_H - 10, headerBtn_W, headerBtn_H);
     [headerBtn setBackgroundImage:[UIImage imageNamed:@"sunlei.jpg"] forState:UIControlStateNormal];
-    
+    [headerBtn addTarget:self action:@selector(headerBtn:) forControlEvents:UIControlEventTouchUpInside];
     
     UILabel *nameLbl = [[UILabel alloc]initWithFrame:CGRectMake(SCREEN_W - headerBtn_W - 15 - 200 -10, headerBG.bounds.size.height - 20 - 5, 200, 20)];
     nameLbl.textColor = [UIColor whiteColor];
@@ -80,6 +81,11 @@
     [headerView addSubview:headerBtn];
     
     return headerView;
+}
+
+-(void)headerBtn:(UIButton *)button{
+    
+    [self.delegate headerBtnClick:button];
 }
 
 #pragma mark -UITableViewDelegate协议方法的实现

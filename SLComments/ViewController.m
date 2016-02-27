@@ -7,10 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "Common/CommonHeader.h"
 #import "SLCommentsView.h"
 #import "SLCommentsModel.h"
+#import "AlbumViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<SLCommentsViewDelegate>
 
 @end
 
@@ -24,6 +26,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor whiteColor];
     self.automaticallyAdjustsScrollViewInsets = NO;
+    self.navigationItem.title = @"朋友圈";
     
     [self creatModelsWithCount:10];
 }
@@ -130,7 +133,17 @@
 
 -(void)createComments{
 
-    [[SLCommentsView shareInstance] createCommentsWithFrame:self.view.frame ToView:self.view dataSource:_modelsArray];
+    SLCommentsView *commentsView = [SLCommentsView shareInstance];
+    commentsView.delegate = self;
+    [commentsView createCommentsWithFrame: CGRectMake(0, 64, SCREEN_W, SCREEN_H - 64) ToView:self.view dataSource:_modelsArray];
+}
+
+#pragma mark -SLCommentsViewDelegate
+
+-(void)headerBtnClick:(UIButton *)button{
+
+    AlbumViewController *albumVC = [[AlbumViewController alloc]init];
+    [self.navigationController pushViewController:albumVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

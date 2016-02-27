@@ -8,7 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol SLCommentsViewDelegate <NSObject>
+
+-(void)headerBtnClick:(UIButton *)button;
+
+@end
+
 @interface SLCommentsView : UIView<UITableViewDataSource,UITableViewDelegate>
+
+
+@property (nonatomic, assign) id<SLCommentsViewDelegate> delegate;
 
 +(SLCommentsView *)shareInstance;
 -(void)createCommentsWithFrame:(CGRect)frame ToView:(UIView *)targetView dataSource:(NSMutableArray *)dataArr;
