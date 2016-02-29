@@ -191,8 +191,15 @@
     //布局
     int numOfLine = 0;
     int colu = 3;
-    img_H = 100;
-    img_W = 100;
+    
+    if (SCREEN_W == 320) {
+        img_H = 80;
+        img_W = 80;
+    }else{
+        img_H = 100;
+        img_W = 100;
+    }
+    
     
     if ((model.imageArr.count <= 3) && (model.imageArr.count > 0)) {
         if (model.imageArr.count == 1) { //当只有一张图片时，按比例显示图片
