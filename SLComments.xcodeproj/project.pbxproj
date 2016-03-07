@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71181D841C8D1CE100F4E559 /* SLComments.gif in Resources */ = {isa = PBXBuildFile; fileRef = 71181D831C8D1CE100F4E559 /* SLComments.gif */; };
 		7176F9331C7DAD5200854D09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7176F9321C7DAD5200854D09 /* main.m */; };
 		7176F9361C7DAD5200854D09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7176F9351C7DAD5200854D09 /* AppDelegate.m */; };
 		7176F9391C7DAD5200854D09 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7176F9381C7DAD5200854D09 /* ViewController.m */; };
@@ -77,6 +78,7 @@
 
 /* Begin PBXFileReference section */
 		4FCCC61BFA8ABBC636CC35E3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		71181D831C8D1CE100F4E559 /* SLComments.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SLComments.gif; sourceTree = "<group>"; };
 		7176F92E1C7DAD5200854D09 /* SLComments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLComments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7176F9321C7DAD5200854D09 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7176F9341C7DAD5200854D09 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 		7176F9251C7DAD5100854D09 = {
 			isa = PBXGroup;
 			children = (
+				71181D831C8D1CE100F4E559 /* SLComments.gif */,
 				7176F9301C7DAD5200854D09 /* SLComments */,
 				7176F94A1C7DAD5200854D09 /* SLCommentsTests */,
 				7176F9551C7DAD5200854D09 /* SLCommentsUITests */,
@@ -540,6 +543,7 @@
 				7176F9EE1C81569100854D09 /* photo.png in Resources */,
 				7176F98A1C7DAD9000854D09 /* icon2.jpg in Resources */,
 				7176F9871C7DAD9000854D09 /* comments_header_bg.png in Resources */,
+				71181D841C8D1CE100F4E559 /* SLComments.gif in Resources */,
 				7176F98C1C7DAD9000854D09 /* icon4.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
