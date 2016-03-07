@@ -26,6 +26,7 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
+        img_H = 0;
         //先清除缓存
         [[SDWebImageManager sharedManager].imageCache clearDisk];
         [self createContents];
@@ -177,11 +178,6 @@
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapImageView:)];
         [imageView addGestureRecognizer:tap];
         
-//        UIImage *imgTmp = [UIImage imageNamed:[model.imageArr objectAtIndex:numOfImg]];
-//        //float scale = img_W / imgTmp.size.width;
-//        imageView.image = imgTmp;//[Tools scaleImage:imgTmp toScale:scale];
-        
-        
         [imageView sd_setImageWithURL:[NSURL URLWithString:[model.imageArr objectAtIndex:numOfImg]]];
         
 //        NSData *picData = UIImageJPEGRepresentation(imgTmp, 0.3); //压缩图片质量
@@ -205,9 +201,8 @@
     
     if ((model.imageArr.count <= 3) && (model.imageArr.count > 0)) {
         if (model.imageArr.count == 1) { //当只有一张图片时，按比例显示图片
-            UIImage *imgTmp = [UIImage imageNamed:model.imageArr[0]];
             img_W = 120;
-            img_H = 120.0 * imgTmp.size.height/imgTmp.size.width;
+            img_H = 160;
             colu = 1;
         }
         numOfLine = 1;
