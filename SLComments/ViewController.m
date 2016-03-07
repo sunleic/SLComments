@@ -12,6 +12,7 @@
 #import "SLCommentsModel.h"
 #import "AlbumViewController.h"
 
+
 @interface ViewController ()<SLCommentsViewDelegate>
 
 @end
@@ -27,6 +28,14 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.navigationItem.title = @"朋友圈";
+    
+    
+    /*
+     
+     http://7xqg0d.com1.z0.glb.clouddn.com/slpic0.jpg
+     http://7xqg0d.com1.z0.glb.clouddn.com/slpic1.jpg
+     
+     */
     
     [self creatModelsWithCount:10];
 }
@@ -58,15 +67,15 @@
                            @"萧炎，斗之力，三段！级别：低级！”测验魔石碑之旁，一位中年男子，看了一眼碑上所显示出来的信息，语气漠然的将之公布了出来…"
                            ];
     
-    NSArray *picImageNamesArray = @[ @"pic0.jpg",
-                                     @"pic1.jpg",
-                                     @"pic2.jpg",
-                                     @"pic3.jpg",
-                                     @"pic4.jpg",
-                                     @"pic5.jpg",
-                                     @"pic6.jpg",
-                                     @"pic7.jpg",
-                                     @"pic8.jpg"
+    NSArray *picImageNamesArray = @[ @"http://7xqg0d.com1.z0.glb.clouddn.com/slpic0.jpg-long",
+                                     @"http://7xqg0d.com1.z0.glb.clouddn.com/slpic1.jpg-long",
+                                     @"http://7xqg0d.com1.z0.glb.clouddn.com/slpic2.jpg-long",
+                                     @"http://7xqg0d.com1.z0.glb.clouddn.com/slpic3.jpg-long",
+                                     @"http://7xqg0d.com1.z0.glb.clouddn.com/slpic4.jpg-long",
+                                     @"http://7xqg0d.com1.z0.glb.clouddn.com/slpic5.jpg-long",
+                                     @"http://7xqg0d.com1.z0.glb.clouddn.com/slpic6.jpg-long",
+                                     @"http://7xqg0d.com1.z0.glb.clouddn.com/slpic7.jpg-long",
+                                     @"http://7xqg0d.com1.z0.glb.clouddn.com/slpic8.jpg-long"
                                      ];
     
     NSArray *dateArray = @[ @"1小时前",

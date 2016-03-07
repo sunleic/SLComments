@@ -177,10 +177,12 @@
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapImageView:)];
         [imageView addGestureRecognizer:tap];
         
-        UIImage *imgTmp = [UIImage imageNamed:[model.imageArr objectAtIndex:numOfImg]];
-        //float scale = img_W / imgTmp.size.width;
-        imageView.image = imgTmp;//[Tools scaleImage:imgTmp toScale:scale];
+//        UIImage *imgTmp = [UIImage imageNamed:[model.imageArr objectAtIndex:numOfImg]];
+//        //float scale = img_W / imgTmp.size.width;
+//        imageView.image = imgTmp;//[Tools scaleImage:imgTmp toScale:scale];
         
+        
+        [imageView sd_setImageWithURL:[NSURL URLWithString:[model.imageArr objectAtIndex:numOfImg]]];
         
 //        NSData *picData = UIImageJPEGRepresentation(imgTmp, 0.3); //压缩图片质量
 //        imageView.image = [UIImage imageWithData:picData];
@@ -273,7 +275,12 @@
 - (NSURL *)photoBrowser:(SDPhotoBrowser *)browser highQualityImageURLForIndex:(NSInteger)index
 {
     NSString *imageName = self.model.imageArr[index];
-    NSURL *url = [[NSBundle mainBundle] URLForResource:imageName withExtension:nil];
+//    NSURL *url = [[NSBundle mainBundle] URLForResource:imageName withExtension:nil];
+    
+    NSString *strTmp = [[imageName componentsSeparatedByString:@"-"] objectAtIndex:0];
+
+    NSURL *url = [NSURL URLWithString:[strTmp stringByAppendingString:@"-sl"]];
+    
     return url;
 }
 
