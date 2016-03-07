@@ -55,7 +55,6 @@
 		7176F9EC1C81501D00854D09 /* AlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7176F9EB1C81501D00854D09 /* AlbumModel.m */; };
 		7176F9EE1C81569100854D09 /* photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7176F9ED1C81569100854D09 /* photo.png */; };
 		7176F9F41C815B8C00854D09 /* IssueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7176F9F31C815B8C00854D09 /* IssueViewController.m */; };
-		71E699681C852DDF00F8D4D1 /* SLComments.gif in Resources */ = {isa = PBXBuildFile; fileRef = 71E699671C852DDF00F8D4D1 /* SLComments.gif */; };
 		A2A0A908143D61D78298D60A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9956AC8E7259B8C1385BE392 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -164,7 +163,6 @@
 		7176F9ED1C81569100854D09 /* photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo.png; sourceTree = "<group>"; };
 		7176F9F21C815B8C00854D09 /* IssueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssueViewController.h; sourceTree = "<group>"; };
 		7176F9F31C815B8C00854D09 /* IssueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssueViewController.m; sourceTree = "<group>"; };
-		71E699671C852DDF00F8D4D1 /* SLComments.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SLComments.gif; sourceTree = "<group>"; };
 		9956AC8E7259B8C1385BE392 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A63B40A60DC81EBBA1BEBE1E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -206,7 +204,6 @@
 		7176F9251C7DAD5100854D09 = {
 			isa = PBXGroup;
 			children = (
-				71E699671C852DDF00F8D4D1 /* SLComments.gif */,
 				7176F9301C7DAD5200854D09 /* SLComments */,
 				7176F94A1C7DAD5200854D09 /* SLCommentsTests */,
 				7176F9551C7DAD5200854D09 /* SLCommentsUITests */,
@@ -530,7 +527,6 @@
 			files = (
 				7176F9881C7DAD9000854D09 /* icon0.jpg in Resources */,
 				7176F9411C7DAD5200854D09 /* LaunchScreen.storyboard in Resources */,
-				71E699681C852DDF00F8D4D1 /* SLComments.gif in Resources */,
 				7176F9E31C8040AA00854D09 /* zan.png in Resources */,
 				7176F9891C7DAD9000854D09 /* icon1.jpg in Resources */,
 				7176F98E1C7DAD9000854D09 /* pbg.jpg in Resources */,
