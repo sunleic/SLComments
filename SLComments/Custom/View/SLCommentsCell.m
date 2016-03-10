@@ -177,8 +177,7 @@
         imageView.tag = numOfImg;
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapImageView:)];
         [imageView addGestureRecognizer:tap];
-        
-        [imageView sd_setImageWithURL:[NSURL URLWithString:[model.imageArr objectAtIndex:numOfImg]]];
+        [imageView sd_setImageWithURL:[NSURL URLWithString:[model.imageArr objectAtIndex:numOfImg]] placeholderImage:[UIImage imageNamed:@"zhanWeiPic.jpg"]];
         
 //        NSData *picData = UIImageJPEGRepresentation(imgTmp, 0.3); //压缩图片质量
 //        imageView.image = [UIImage imageWithData:picData];

@@ -55,6 +55,7 @@
 		7176F9EC1C81501D00854D09 /* AlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7176F9EB1C81501D00854D09 /* AlbumModel.m */; };
 		7176F9EE1C81569100854D09 /* photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7176F9ED1C81569100854D09 /* photo.png */; };
 		7176F9F41C815B8C00854D09 /* IssueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7176F9F31C815B8C00854D09 /* IssueViewController.m */; };
+		71FF7E2B1C911496002CA51E /* zhanWeiPic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 71FF7E2A1C911496002CA51E /* zhanWeiPic.jpg */; };
 		A2A0A908143D61D78298D60A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9956AC8E7259B8C1385BE392 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -163,6 +164,7 @@
 		7176F9ED1C81569100854D09 /* photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo.png; sourceTree = "<group>"; };
 		7176F9F21C815B8C00854D09 /* IssueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssueViewController.h; sourceTree = "<group>"; };
 		7176F9F31C815B8C00854D09 /* IssueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssueViewController.m; sourceTree = "<group>"; };
+		71FF7E2A1C911496002CA51E /* zhanWeiPic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zhanWeiPic.jpg; sourceTree = "<group>"; };
 		9956AC8E7259B8C1385BE392 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A63B40A60DC81EBBA1BEBE1E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -302,6 +304,7 @@
 		7176F97D1C7DAD9000854D09 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				71FF7E291C911496002CA51E /* Images */,
 				7176F97E1C7DAD9000854D09 /* Controller */,
 				7176F9811C7DAD9000854D09 /* Model */,
 				7176F9841C7DAD9000854D09 /* View */,
@@ -405,6 +408,14 @@
 				7176F9CA1C7F1BE800854D09 /* UIView+WebCacheOperation.m */,
 			);
 			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		71FF7E291C911496002CA51E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				71FF7E2A1C911496002CA51E /* zhanWeiPic.jpg */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		B029615476A7F1C11A52E9EB /* Pods */ = {
@@ -528,6 +539,7 @@
 				7176F9881C7DAD9000854D09 /* icon0.jpg in Resources */,
 				7176F9411C7DAD5200854D09 /* LaunchScreen.storyboard in Resources */,
 				7176F9E31C8040AA00854D09 /* zan.png in Resources */,
+				71FF7E2B1C911496002CA51E /* zhanWeiPic.jpg in Resources */,
 				7176F9891C7DAD9000854D09 /* icon1.jpg in Resources */,
 				7176F98E1C7DAD9000854D09 /* pbg.jpg in Resources */,
 				7176F9991C7DAD9000854D09 /* sunlei.jpg in Resources */,
