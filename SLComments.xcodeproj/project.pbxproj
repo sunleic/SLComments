@@ -231,7 +231,7 @@
 				7176F99D1C7F1B0900854D09 /* Libs */,
 				7176F9671C7DAD9000854D09 /* Common */,
 				7176F9691C7DAD9000854D09 /* Images */,
-				7176F97D1C7DAD9000854D09 /* Custom */,
+				7176F97D1C7DAD9000854D09 /* Comments */,
 				7176F9341C7DAD5200854D09 /* AppDelegate.h */,
 				7176F9351C7DAD5200854D09 /* AppDelegate.m */,
 				7176F9371C7DAD5200854D09 /* ViewController.h */,
@@ -301,7 +301,7 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
-		7176F97D1C7DAD9000854D09 /* Custom */ = {
+		7176F97D1C7DAD9000854D09 /* Comments */ = {
 			isa = PBXGroup;
 			children = (
 				71FF7E291C911496002CA51E /* Images */,
@@ -309,6 +309,7 @@
 				7176F9811C7DAD9000854D09 /* Model */,
 				7176F9841C7DAD9000854D09 /* View */,
 			);
+			name = Comments;
 			path = Custom;
 			sourceTree = "<group>";
 		};
