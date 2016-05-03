@@ -1,7 +1,7 @@
 #### SLComments
 类似微信朋友圈，功能在不断完善之中，如发现bug，请望告知，一起学习
 
-![image](http://7xqg0d.com1.z0.glb.clouddn.com/SLComments.gif)
+![image](https://github.com/SLPowerCoder/SLComments/blob/master/SLComments/Images/SLComments.gif)
 
 #### 使用方法
 [[SLCommentsView shareInstance] createCommentsWithFrame:self.view.frame ToView:self.view dataSource:_modelsArray];
